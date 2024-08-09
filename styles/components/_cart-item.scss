@@ -1,0 +1,19 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  @include scr-devices() {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__text {
+    font-size: 2rem;
+  }
+  &__actions {
+    display: flex;
+    gap: 2rem;
+  }
+}

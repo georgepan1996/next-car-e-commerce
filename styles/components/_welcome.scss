@@ -1,0 +1,12 @@
+.welcome {
+  padding: $gutter-vertical $gutter-horizontal;
+  background-color: $color-white;
+  color: $color-primary;
+  text-align: center;
+  &__title {
+    max-width: 40rem;
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+}

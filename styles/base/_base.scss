@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% of 16px is 10px | set root font size that rems will be relative to */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 89vh;
+  padding-top: 110px;
+  @include scr-devices {
+    padding-top: 0;
+    min-height: unset;
+  }
+}
+
+.hidden-link-text {
+  // visibility: hidden;
+  // height: 0;
+}

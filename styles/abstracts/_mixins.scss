@@ -1,0 +1,16 @@
+@mixin scr-devices() {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin scr-tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin scr-desktops() {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}

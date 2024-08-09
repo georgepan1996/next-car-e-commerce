@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gutter-vertical $gutter-horizontal;
+  background-color: $color-primary;
+  height: 7.5rem;
+  &__contact {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    @include scr-devices {
+      display: block;
+    }
+  }
+  &__social-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    a {
+      color: $color-white;
+      &:hover {
+        color: $color-tetriary;
+      }
+    }
+  }
+  @include scr-devices {
+    flex-direction: column;
+    height: auto;
+  }
+}
